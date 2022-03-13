@@ -66,7 +66,7 @@
         //Fucntions SET
         public function set_idEtudiant($idEtudiant){
             $this->idEtudiant = $idEtudiant;
-        }
+        }//non utlisé dans 99% des cas
 
         public function set_nom($nomEtudiant){
             $this->nomEtudiant = $nomEtudiant;
