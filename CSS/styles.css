@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* Template CSS */
+
+body { 
+    margin:0; 
+    padding:0; 
+    font: 14px Sans-Serif;
+} 
+
+h1, h2, h3, h4, h5, h6 {
+    color:#af9268;
+}
+
+/* Navbar */
+
+.navbar li.ligne {display: inline;}
+.navbar li.left {float: left;}
+.navbar li.center {float: center;}
+.navbar li.right {float: right;}
+.navbar ul{
+    background:#323232; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li a{
+    color: #af9268;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Content */
+#content { 
+    margin:auto; 
+    padding:40px; 
+    background:rgb(207, 207, 207);
+    color:#323232;
+}
+
+/* Footer */
+#footer { 
+    background:rgb(48, 48, 48);
+    font:16px Sans-Serif;
+    margin:auto; 
+    text-align:center; 
+    padding:12px; 
+}
+
+#footer a {
+    color:#af9268;
+    text-decoration:none;
+    padding: auto;
+}
+
+.error {
+    color : red;
+}
+
+.succes {
+    color : green;
+  }
+
+table, th, td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-collapse: collapse;
+    }
+
+tr:nth-child(odd) {
+    background-color: lightgrey;
+    }
+    tr:nth-child(even) {
+    background-color: white; ;
+    }
+
+th,td {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size : 14px;
+    width:150px;
+    padding: 5px;
+    text-align:center;
+    }
+
+th {
+    background-color: grey;
+    color: white; 
+    }
+
+td {
+    color: black;
+    }

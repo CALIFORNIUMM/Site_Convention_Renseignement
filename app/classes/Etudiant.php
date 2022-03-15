@@ -11,6 +11,7 @@
         private $codePostalAdrEtudiant;
         private $libAdrEtudiant;
         private $dateArriveeEtudiant;
+        private $pseudo;
 
         function __construct(Array $Etudiant=NULL){
             if($Etudiant != NULL){
@@ -63,6 +64,10 @@
             return $this->dateArriveeEtudiant;
         }
 
+        public function get_pseudo(){
+            return $this->pseudo;
+        }
+
         //Fucntions SET
         public function set_idEtudiant($idEtudiant){
             $this->idEtudiant = $idEtudiant;
@@ -106,6 +111,10 @@
 
         public function set_dateArr($dateArriveeEtudiant){
             $this->dateArriveeEtudiant = $dateArriveeEtudiant;
+        }
+
+        public function set_pseudo($pseudo){
+            $this->pseudo = $pseudo;
         }
 
         //Function de fill sur les setter
