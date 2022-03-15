@@ -90,6 +90,7 @@ CREATE TABLE Stage(
    dateDebutStage DATE DEFAULT NULL,
    dateFinStage DATE DEFAULT NULL,
    dureeHebdoStage INT DEFAULT NULL,
+   isPremiereAnnee bool DEFAULT NULL,
    idProf int(11) NOT NULL,
    idEtudiant int(11) NOT NULL,
    idAnneeScolaire int(11) NOT NULL,

@@ -15,12 +15,12 @@
             } catch (PDOException $e) {
                 throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());
             }
-            $user=null;
+            $etudiant=null;
             if($row) {  
-                $user = new Etudiant($row);
+                $etudiant = new Etudiant($row);
             }
             // Retourne l'objet
-            return $user;
+            return $etudiant;
         } // function find() TROUVE UN SEUL UTILISATEUR
 
         function findAll() {
@@ -32,12 +32,12 @@
             } catch (PDOException $e) {
                 throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());
             }
-            $user = array();
+            $etudiant = array();
             foreach ($rows as $row) {
-                $user[] = new Etudiant($row);
+                $etudiant[] = new Etudiant($row);
             }
             // Retourne un tableau d'objets
-            return $user;
+            return $etudiant;
         } // function findAll() TROUVE TOUS LES ETUDIANTS
 
         public function newEtudiant(Etudiant $Etudiant){

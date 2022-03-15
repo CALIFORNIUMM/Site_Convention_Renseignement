@@ -6,6 +6,7 @@
         private $dateDebutStage;
         private $dateFinStage;
         private $dureeHebdoStage;
+        private $isPremiereAnnee;
         private $idProfStage;
         private $idEtudiantStage;
         private $idAnneeScolaireStage;
@@ -41,6 +42,10 @@
 
         public function get_dureeHebdoStage(){
             return $this->dureeHebdoStage;
+        }
+
+        public function get_isPremiereAnne(){
+            return $this->isPremiereAnnee;
         }
 
         public function get_idProfStage(){
@@ -86,7 +91,11 @@
 
         public function set_dureeHebdoStage($dureeHebdoStage){
                 $this->dureeHebdoStage = $dureeHebdoStage;           
-        }     
+        } 
+        
+        public function set_isPremiereAnnee($isPremiereAnnee){
+            $this->isPremiereAnnee = $isPremiereAnnee;           
+    }
 
         public function set_idProfStage($idProfStage){
                 $this->idProfStage = $idProfStage;               
