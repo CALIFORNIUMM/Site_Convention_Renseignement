@@ -18,23 +18,23 @@
             return $this->idProf;
         }
 
-        public function get_nom(){
+        public function get_nomProf(){
             return $this->nomProf;
         }
 
-        public function get_prenom(){
+        public function get_prenomProf(){
             return $this->prenomProf;
         }
 
-        public function get_mdp(){
+        public function get_mdpProf(){
             return $this->mdpProf;
         }
 
-        public function get_tel(){
+        public function get_telProf(){
             return $this->telProf;
         }
 
-        public function get_mail(){
+        public function get_mailProf(){
             return $this->mailProf;
         }
 
@@ -43,23 +43,23 @@
             $this->idProf = $idProf;
         }
 
-        public function set_nom($nomProf){
+        public function set_nomProf($nomProf){
             $this->nomProf = $nomProf;
         }
 
-        public function set_prenom($prenomProf){
+        public function set_prenomProf($prenomProf){
             $this->prenomProf = $prenomProf;
         }
 
-        public function set_mdp($mdpProf){
+        public function set_mdpProf($mdpProf){
             $this->mdpProf = $mdpProf;
         }
 
-        public function set_tel($telProf){
+        public function set_telProf($telProf){
             $this->telProf = $telProf;
         }
 
-        public function set_mail($mailProf){
+        public function set_mailProf($mailProf){
             $this->$mailProf = $$mailProf;
         }
 

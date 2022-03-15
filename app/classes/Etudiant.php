@@ -11,7 +11,7 @@
         private $codePostalAdrEtudiant;
         private $libAdrEtudiant;
         private $dateArriveeEtudiant;
-        private $pseudo;
+        private $pseudoEtudiant;
 
         function __construct(Array $Etudiant=NULL){
             if($Etudiant != NULL){
@@ -24,48 +24,48 @@
             return $this->idEtudiant;
         }
 
-        public function get_nom(){
+        public function get_nomEtudiant(){
             return $this->nomEtudiant;
         }
 
-        public function get_prenom(){
+        public function get_prenomEtudiant(){
             return $this->prenomEtudiant;
         }
 
-        public function get_tel(){
+        public function get_telEtudiant(){
             return $this->telEtudiant;
         }
 
-        public function get_mdp(){
+        public function get_mdpEtudiant(){
             return $this->mdpEtudiant;
         }
 
-        public function get_dateNaissance(){
+        public function get_dateNaissanceEtudiant(){
             return $this->dateNaissanceEtudiant;
         }
 
-        public function get_ville(){
+        public function get_villeAdrEtudiant(){
             return $this->villeAdrEtudiant;
         }
 
-        public function get_numAdr(){
+        public function get_numAdrEtudiant(){
             return $this->numAdrEtudiant;
         }
 
-        public function get_cp(){
+        public function get_codePostalAdrEtudiant(){
             return $this->codePostalAdrEtudiant;
         }
 
-        public function get_libAdr(){
+        public function get_libAdrEtudiant(){
             return $this->libAdrEtudiant;
         }
 
-        public function get_dateArr(){
+        public function get_dateArriveeEtudiant(){
             return $this->dateArriveeEtudiant;
         }
 
-        public function get_pseudo(){
-            return $this->pseudo;
+        public function get_pseudoEtudiant(){
+            return $this->pseudoEtudiant;
         }
 
         //Fucntions SET
@@ -73,48 +73,48 @@
             $this->idEtudiant = $idEtudiant;
         }//non utlisé dans 99% des cas
 
-        public function set_nom($nomEtudiant){
+        public function set_nomEtudiant($nomEtudiant){
             $this->nomEtudiant = $nomEtudiant;
         }
 
-        public function set_prenom($prenomEtudiant){
+        public function set_prenomEtudiant($prenomEtudiant){
             $this->prenomEtudiant = $prenomEtudiant;
         }
 
-        public function set_tel($telEtudiant){
+        public function set_telEtudiant($telEtudiant){
             $this->telEtudiant = $telEtudiant;
         }
 
-        public function set_mdp($mdpEtudiant){
+        public function set_mdpEtudiant($mdpEtudiant){
             $this->mdpEtudiant = $mdpEtudiant;
         }
 
-        public function set_dateNaissance($dateNaissanceEtudiant){
+        public function set_dateNaissanceEtudiant($dateNaissanceEtudiant){
             $this->dateNaissanceEtudiant = $dateNaissanceEtudiant;
         }
 
-        public function set_ville($villeAdrEtudiant){
+        public function set_villeAdrEtudiant($villeAdrEtudiant){
             $this->villeAdrEtudiant = $villeAdrEtudiant;
         }
 
-        public function set_numAdr($numAdrEtudiant){
+        public function set_numAdrEtudiant($numAdrEtudiant){
             $this->numAdrEtudiant = $numAdrEtudiant;
         }
 
-        public function set_cp($codePostalAdrEtudiant){
+        public function set_codePostalAdrEtudiant($codePostalAdrEtudiant){
             $this->codePostalAdrEtudiant = $codePostalAdrEtudiant;
         }
 
-        public function set_libAdr($libAdrEtudiant){
+        public function set_libAdrEtudiant($libAdrEtudiant){
             $this->libAdrEtudiant = $libAdrEtudiant;
         }
 
-        public function set_dateArr($dateArriveeEtudiant){
+        public function set_dateArriveeEtudiant($dateArriveeEtudiant){
             $this->dateArriveeEtudiant = $dateArriveeEtudiant;
         }
 
-        public function set_pseudo($pseudo){
-            $this->pseudo = $pseudo;
+        public function set_pseudoEtudiant($pseudoEtudiant){
+            $this->pseudoEtudiant = $pseudoEtudiant;
         }
 
         //Function de fill sur les setter

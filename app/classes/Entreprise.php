@@ -22,39 +22,39 @@
             return $this->idEnt;
         }
 
-        public function get_nom(){
+        public function get_nomEnt(){
             return $this->nomEnt;
         }
 
-        public function get_mission(){
+        public function get_missionEnt(){
             return $this->missionEnt;
         }
 
-        public function get_tel(){
+        public function get_telephoneEnt(){
             return $this->telEnt;
         }
 
-        public function get_mail(){
+        public function get_mailEnt(){
             return $this->mailEnt;
         }
 
-        public function get_siret(){
+        public function get_siretEnt(){
             return $this->siretEnt;
         }
 
-        public function get_ville(){
+        public function get_villeAdrEnt(){
             return $this->villeAdrEnt;
         }
 
-        public function get_numAdr(){
+        public function get_numAdrEnt(){
             return $this->numAdrEnt;
         }
 
-        public function get_cp(){
+        public function get_codePostalEnt(){
             return $this->codePostalAdrEnt;
         }
 
-        public function get_libAdr(){
+        public function get_libAdrEnt(){
             return $this->libAdrEnt;
         }
 
@@ -63,39 +63,39 @@
             $this->idEnt = $idEnt;
         }//non utlisé dans 99% des cas
 
-        public function set_nom($nomEnt){
+        public function set_nomEnt($nomEnt){
             $this->nomEnt = $nomEnt;
         }
 
-        public function set_mission($missionEnt){
+        public function set_missionEnt($missionEnt){
             $this->missionEnt = $missionEnt;
         }
 
-        public function set_tel($telEnt){
+        public function set_telephoneEnt($telEnt){
             $this->telEnt = $telEnt;
         }
 
-        public function set_mail($mailEnt){
+        public function set_mailEnt($mailEnt){
             $this->mailEnt = $mailEnt;
         }
 
-        public function set_siret($siretEnt){
+        public function set_siretEnt($siretEnt){
             $this->siretEnt = $siretEnt;
         }
 
-        public function set_ville($villeAdrEnt){
+        public function set_villeAdrEnt($villeAdrEnt){
             $this->villeAdrEnt = $villeAdrEnt;
         }
 
-        public function set_numAdr($numAdrEnt){
+        public function set_numAdrEnt($numAdrEnt){
             $this->numAdrEnt = $numAdrEnt;
         }
 
-        public function set_cp($codePostalAdrEnt){
+        public function set_codePostalEnt($codePostalAdrEnt){
             $this->codePostalAdrEnt = $codePostalAdrEnt;
         }
 
-        public function set_libAdr($libAdrEnt){
+        public function set_libAdrEnt($libAdrEnt){
             $this->libAdrEnt = $libAdrEnt;
         }
 

@@ -45,17 +45,17 @@
             try {
                 $sth = $this->pdo->prepare($sql);
                 $sth->execute(array(
-                    ":nom" => $Etudiant->get_nom(),
-                    ":prenom" => $Etudiant->get_prenom(),
-                    ":tel" => $Etudiant->get_tel(),
-                    ":mdp" => $Etudiant->get_mdp(),
-                    ":dateNaiss" => $Etudiant->get_dateNaissance(),
-                    ":ville" => $Etudiant->get_ville(),
-                    ":numAdr" => $Etudiant->get_numAdr(),
-                    ":cp" => $Etudiant->get_cp(),
-                    ":libAdr" => $Etudiant->get_libAdr(),
-                    ":dateArr" => $Etudiant->get_dateArr(),
-                    "pseudo" => $Etudiant->get_pseudo()
+                    ":nom" => $Etudiant->get_nomEtudiant(),
+                    ":prenom" => $Etudiant->get_prenomEtudiant(),
+                    ":tel" => $Etudiant->get_telEtudiant(),
+                    ":mdp" => $Etudiant->get_mdpEtudiant(),
+                    ":dateNaiss" => $Etudiant->get_dateNaissanceEtudiant(),
+                    ":ville" => $Etudiant->get_villeAdrEtudiant(),
+                    ":numAdr" => $Etudiant->get_numAdrEtudiant(),
+                    ":cp" => $Etudiant->get_codePostalAdrEtudiant(),
+                    ":libAdr" => $Etudiant->get_libAdrEtudiant(),
+                    ":dateArr" => $Etudiant->get_dateArriveeEtudiant(),
+                    "pseudo" => $Etudiant->get_pseudoEtudiant()
                 ));
             } catch (PDOException $e) {
                 throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());

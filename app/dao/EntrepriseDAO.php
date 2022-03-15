@@ -45,15 +45,15 @@
             try {
                 $sth = $this->pdo->prepare($sql);
                 $sth->execute(array(
-                    ":nom" => $Ent->get_nom(),
-                    ":mission" => $Ent->get_mail(),
-                    ":numAdr" => $Ent->get_numAdr(),
-                    ":libAdr" => $Ent->get_libAdr(),
-                    ":cp" => $Ent->get_cp(),
-                    ":ville" => $Ent->get_ville(),
-                    ":tel" => $Ent->get_tel(),
-                    ":mail" => $Ent->get_mail(),
-                    ":siret" => $Ent->get_siret(),
+                    ":nom" => $Ent->get_nomEnt(),
+                    ":mission" => $Ent->get_mailEnt(),
+                    ":numAdr" => $Ent->get_numAdrEnt(),
+                    ":libAdr" => $Ent->get_libAdrEnt(),
+                    ":cp" => $Ent->get_codePostalEnt(),
+                    ":ville" => $Ent->get_villeAdrEnt(),
+                    ":tel" => $Ent->get_telephoneEnt(),
+                    ":mail" => $Ent->get_mailEnt(),
+                    ":siret" => $Ent->get_siretEnt(),
                 ));
             } catch (PDOException $e) {
                 throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());

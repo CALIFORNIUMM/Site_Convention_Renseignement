@@ -38,7 +38,7 @@
                 //    header('Location: admin.php');
                 //}
                 //else {
-                    $flash->set_type('succes')->add_messages('Vous vous êtes bien connecté : '.$_SESSION['Etudiant']->get_pseudo().'')->put();
+                    $flash->set_type('succes')->add_messages('Vous vous êtes bien connecté : '.$_SESSION['Etudiant']->get_pseudoEtudiant().'')->put();
                     header('Location: profil.php');
                 //}
             }

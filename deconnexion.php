@@ -2,6 +2,6 @@
 $title = "Deconnexion";
 include('header.php');
 
-unset($_SESSION['user']);
-header('Location: connexion.php');
+unset($_SESSION['Etudiant']);
+header('Location: index.php');
 ?>

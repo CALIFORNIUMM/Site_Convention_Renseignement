@@ -1,8 +1,8 @@
 <?php
     include('init.php');
     $messages = array();  // Message d'erreur
-    if(isset($_SESSION['user'])){
-        $session = $_SESSION['user'];
+    if(isset($_SESSION['Etudiant'])){
+        $session = $_SESSION['Etudiant'];
     }
 ?>
 <!DOCTYPE html>
@@ -30,11 +30,11 @@
                     //if($session->get_role() == 1){
                     //    echo '<li class="ligne right"><a href="controleur.php">CONTROLEUR</a></li>';
                     //}
-                    //echo '<li class="ligne left"><a href="profil.php">MON COMPTE</a></li>';
-                    //echo '<li class="ligne right"><a href="deconnexion.php">DECONNEXION</a></li>';
+                echo '<li class="ligne left"><a href="profil.php">MON COMPTE</a></li>';
+                echo '<li class="ligne right"><a href="deconnexion.php">DECONNEXION</a></li>';
                 }else{
-                    echo '<li class="ligne right"><a href="connexionEtudiant.php">CONNEXION PROF</a></li>';
-                    echo '<li class="ligne right"><a href="connexionProf.php">CONNEXION ETUDIANT</a></li>';
+                    echo '<li class="ligne right"><a href="connexionEtudiant.php">CONNEXION ELEVE</a></li>';
+                    echo '<li class="ligne right"><a href="connexionProf.php">CONNEXION PROF</a></li>';
                 }
             ?>
 

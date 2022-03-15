@@ -20,27 +20,27 @@
             return $this->idContact;
         }
 
-        public function get_nom(){
+        public function get_nomContact(){
             return $this->nomContact;
         }
 
-        public function get_prenom(){
+        public function get_prenomContact(){
             return $this->prenomContact;
         }
 
-        public function get_tel(){
+        public function get_telContact(){
             return $this->telContact;
         }
 
-        public function get_mail(){
+        public function get_mailContact(){
             return $this->mailContact;
         }
 
-        public function get_fct(){
+        public function get_fct_contact(){
             return $this->fctContact;
         }
 
-        public function get_isgerant(){
+        public function get_is_gerant(){
             return $this->isgerantContact;
         }
 
@@ -53,27 +53,27 @@
             $this->idContact = $idContact;
         }//non utlisé dans 99% des cas
 
-        public function set_nom($nomContact){
+        public function set_nomContact($nomContact){
             $this->nomContact = $nomContact;
         }
 
-        public function set_prenom($prenomContact){
+        public function set_prenomContact($prenomContact){
             $this->prenomContact = $prenomContact;
         }
 
-        public function set_tel($telContact){
+        public function set_telContact($telContact){
             $this->telContact = $telContact;
         }
 
-        public function set_mail($mailContact){
+        public function set_mailContact($mailContact){
             $this->mailContact = $mailContact;
         }
 
-        public function set_fct($fctContact){
+        public function set_fct_contact($fctContact){
             $this->fctContact = $fctContact;
         }
 
-        public function set_isgerant($isgerantContact){
+        public function set_is_gerant($isgerantContact){
             $this->isgerantContact = $isgerantContact;
         }
 

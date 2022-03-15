@@ -45,12 +45,12 @@
             try {
                 $sth = $this->pdo->prepare($sql);
                 $sth->execute(array(
-                    ":nom" => $Contact->get_nom(),
-                    ":prenom" => $Contact->get_prenom(),
-                    ":tel" => $Contact->get_tel(),
-                    ":mail" => $Contact->get_mail(),
-                    ":fct" => $Contact->get_fct(),
-                    ":isgerant" => $Contact->get_isgerant(),
+                    ":nom" => $Contact->get_nomContact(),
+                    ":prenom" => $Contact->get_prenomContact(),
+                    ":tel" => $Contact->get_telContact(),
+                    ":mail" => $Contact->get_mailContact(),
+                    ":fct" => $Contact->get_fct_contact(),
+                    ":isgerant" => $Contact->get_is_gerant(),
                     ":idEnt" => $Contact->get_idEnt()
                 ));
             } catch (PDOException $e) {
