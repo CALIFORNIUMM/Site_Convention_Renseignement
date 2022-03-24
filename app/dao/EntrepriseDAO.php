@@ -41,7 +41,7 @@
         } // function findAll() TROUVE TOUS LES EntS
 
         public function newEnt(Entreprise $Ent){
-            $sql = "INSERT INTO Ent(nomEnt, missionEnt, numAdrEnt, libAdrEnt, codePostalEnt, villeAdrEnt, telephoneEnt, mailEnt, siretEnt) VALUES (:nom, :mission, :numAdr, :libAdr, :cp, :ville, :tel, :mail, :siret)";
+            $sql = "INSERT INTO Entreprise(nomEnt, missionEnt, numAdrEnt, libAdrEnt, codePostalEnt, villeAdrEnt, telephoneEnt, mailEnt, siretEnt) VALUES (:nom, :mission, :numAdr, :libAdr, :cp, :ville, :tel, :mail, :siret)";
             try {
                 $sth = $this->pdo->prepare($sql);
                 $sth->execute(array(

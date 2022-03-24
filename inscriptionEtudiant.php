@@ -118,25 +118,11 @@
                 'dateArriveeEtudiant' => $dateArriveeEtudiant,
                 'pseudoEtudiant' => $pseudo               
             );
-            //$etudiant = new Etudiant($values);
-            //$netudiant = new EtudiantDAO();
-            //$netudiant = $netudiant->newEtudiant($etudiant);
-            //$lastetudiant = new EtudiantDAO();
-            //$lastetudiant = $lastetudiant->connexionEtudiant($pseudo);
-            //$values = array(
-            //    "nr_licence" => $licence,
-            //    "adr1" => $adresse,
-            //    "adr2" => $cp,
-            //    "adr3" => $ville,
-            //    "id_utilisateur" => $lastetudiant['id_utilisateur'],
-            //    "id_club" => $club
-            //);
-            //$note->createNote($lastetudiant['id_utilisateur']);
-            //$adherent = new Adherent($values);
-            //$nAdherent = new AdherentDAO();
-            //$nAdherent = $nAdherent->newAdherent($adherent);
-            $flash->set_type('succes')->add_messages('Vous vous êtes bien inscrit : '.$etudiant->get_pseudo().'')->put();
-            header("Location: connexion.php");
+            $etudiant = new Etudiant($values);
+            $netudiant = new EtudiantDAO();
+            $netudiant = $netudiant->newEtudiant($etudiant);
+            $flash->set_type('succes')->add_messages('Vous vous êtes bien inscrit en tant qu\'étudiant : '.$etudiant->get_pseudoEtudiant().' Connectez-vous maintenant !')->put();
+            header("Location: index.php");
         }
     }
 ?>

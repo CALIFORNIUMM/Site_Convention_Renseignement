@@ -4,7 +4,6 @@
     if(isset($_SESSION['Etudiant'])){
         $session = $_SESSION['Etudiant'];
     }
-
     if(isset($_SESSION['Prof'])){
         $session = $_SESSION['Prof'];
     }
@@ -28,11 +27,11 @@
 
             <?php
                 if(isset($session)){
-
                     echo '<li class="ligne left"><a href="profil.php">MON COMPTE</a></li>';
                     echo '<li class="ligne right"><a href="deconnexion.php">DECONNEXION</a></li>';
                 }else{
                     echo '<li class="ligne right"><a href="connexionEtudiant.php">CONNEXION ELEVE</a></li>';
+                    echo '<li class="ligne right"><a href="inscriptionEtudiant.php">INSCRIPTION ELEVE</a></li>';
                     echo '<li class="ligne right"><a href="connexionProf.php">CONNEXION PROF</a></li>';
                 }
             ?>
