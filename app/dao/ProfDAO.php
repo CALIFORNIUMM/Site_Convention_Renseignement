@@ -55,5 +55,47 @@
                 throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());
             }
         } //PERMET L'INSERTION D'UN NOUVEL Prof
+
+        public function isExistPseudo($pseudo){
+            $sql = "SELECT count(*) as nb FROM Prof WHERE pseudoProf = :pseudo";
+            try {
+                $sth = $this->pdo->prepare($sql);
+                $sth->execute(array(
+                    ":pseudo" => $pseudo
+                ));
+                $row = $sth->fetch(PDO::FETCH_ASSOC);
+            } catch (PDOException $e) {
+                throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());
+            }
+            $nb=null;
+            if($row) {
+                if($row['nb'] == 0){
+                    $nb = FALSE;
+                }else{
+                    $nb = TRUE;
+                }
+            }
+            // Retourne un tableau d'objets
+            return $nb;
+        }
+
+        function connexionProf($pseudo){
+            $sql = "SELECT idProf, mdpProf FROM Prof WHERE pseudoProf = :pseudo";
+            try {
+                $sth = $this->pdo->prepare($sql);
+                $sth->execute(array(
+                    ":pseudo" => $pseudo
+                ));
+                $row = $sth->fetch(PDO::FETCH_ASSOC);
+            } catch (PDOException $e) {
+                throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());
+            }
+            $infos=null;
+            if($row) {
+                $infos = $row;
+            }
+            // Retourne un tableau d'objets
+            return $infos;
+        }
     }
 ?>

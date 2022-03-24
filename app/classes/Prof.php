@@ -6,6 +6,7 @@
         private $mdpProf;
         private $telProf;
         private $mailProf;
+        private $pseudoProf;
 
         function __construct(Array $Prof=NULL){
             if($Prof != NULL){
@@ -38,6 +39,10 @@
             return $this->mailProf;
         }
 
+        public function get_pseudoProf(){
+            return $this->pseudoProf;
+        }
+
         //Functions SET
         public function set_idProf($idProf){
             $this->idProf = $idProf;
@@ -61,6 +66,10 @@
 
         public function set_mailProf($mailProf){
             $this->$mailProf = $$mailProf;
+        }
+
+        public function set_pseudoProf($pseudoProf){
+            $this->pseudoProf = $pseudoProf;
         }
 
         //Function de fill sur les setter

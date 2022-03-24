@@ -69,7 +69,8 @@ CREATE TABLE Etudiant(
    numAdrEtudiant VARCHAR(10),
    codePostalAdrEtudiant VARCHAR(5),
    libAdrEtudiant VARCHAR(50),
-   dateArriveeEtudiant date DEFAULT NULL
+   dateArriveeEtudiant date DEFAULT NULL,
+   pseudoEtudiant VARCHAR(50)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS `Prof`;
@@ -79,7 +80,8 @@ CREATE TABLE Prof(
    prenomProf VARCHAR(25),
    mdpProf VARCHAR(255),
    telProf VARCHAR(10),
-   mailProf VARCHAR(50)
+   mailProf VARCHAR(50),
+   pseudoProf VARCHAR(50)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS `Stage`;

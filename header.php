@@ -4,6 +4,10 @@
     if(isset($_SESSION['Etudiant'])){
         $session = $_SESSION['Etudiant'];
     }
+
+    if(isset($_SESSION['Prof'])){
+        $session = $_SESSION['Prof'];
+    }
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -24,14 +28,9 @@
 
             <?php
                 if(isset($session)){
-                    //if($session->get_role() == 2){
-                    //    echo '<li><a href="admin.php">ADMIN</a></li>';
-                    //}
-                    //if($session->get_role() == 1){
-                    //    echo '<li class="ligne right"><a href="controleur.php">CONTROLEUR</a></li>';
-                    //}
-                echo '<li class="ligne left"><a href="profil.php">MON COMPTE</a></li>';
-                echo '<li class="ligne right"><a href="deconnexion.php">DECONNEXION</a></li>';
+
+                    echo '<li class="ligne left"><a href="profil.php">MON COMPTE</a></li>';
+                    echo '<li class="ligne right"><a href="deconnexion.php">DECONNEXION</a></li>';
                 }else{
                     echo '<li class="ligne right"><a href="connexionEtudiant.php">CONNEXION ELEVE</a></li>';
                     echo '<li class="ligne right"><a href="connexionProf.php">CONNEXION PROF</a></li>';

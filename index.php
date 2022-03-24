@@ -1,3 +1,8 @@
+<?php
+  $title = "Accueil";
+  include('header.php');
+  include "footer.php"; 
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,6 +12,6 @@
     <title>TEST PDF</title>
 </head>
 <body>
-    <?php include "menu.php"; ?>
+
 </body>
 </html>
