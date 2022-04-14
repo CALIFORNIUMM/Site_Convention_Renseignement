@@ -2,10 +2,10 @@
     include('init.php');
     $messages = array();  // Message d'erreur
     if(isset($_SESSION['Etudiant'])){
-        $session = $_SESSION['Etudiant'];
+        $sessionEtu = $_SESSION['Etudiant'];
     }
     if(isset($_SESSION['Prof'])){
-        $session = $_SESSION['Prof'];
+        $sessionProf = $_SESSION['Prof'];
     }
 ?>
 <!DOCTYPE html>
@@ -26,8 +26,9 @@
             <li class="ligne center"><h1>FICHE - <?= $title ?></h1></li>
 
             <?php
-                if(isset($session)){
-                    echo '<li class="ligne left"><a href="profil.php">MON COMPTE</a></li>';
+                if(isset($sessionEtu)){
+                    echo '<li class="ligne left"><a href="profil.php">Profil</a></li>';
+                    echo '<li class="ligne left"><a href="ajout_stage.php">Ajouter un stage</a></li>';
                     echo '<li class="ligne right"><a href="deconnexion.php">DECONNEXION</a></li>';
                 }else{
                     echo '<li class="ligne right"><a href="connexionEtudiant.php">CONNEXION ELEVE</a></li>';

@@ -1,5 +1,5 @@
 <?php
-    $title = "Ajout d'une entreprise";
+    $title = "Ajout d'un contact";
     include('header.php');
 
     $prenomContact=isset($_POST['prenom']) ? $_POST['prenom'] : NULL;
@@ -62,7 +62,7 @@
     }
 ?>
 <h1>Etudiant</h1>
-<h2>Ajout d'une entreprise</h2>
+<h2>Ajout d'un contact</h2>
 <?php 
     if($messages->is_empty() == FALSE){
         $messages->afficher();
@@ -109,6 +109,6 @@
         <option value="Non">Non</option>
     </select><br><br>
     
-    <input name="submit" type="submit" id="submit" value="Ajouter l'entreprise">
+    <input name="submit" type="submit" id="submit" value="Ajouter le contact">
 </form>
 <?php include('footer.php'); ?>

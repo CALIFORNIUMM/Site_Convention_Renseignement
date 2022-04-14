@@ -65,7 +65,7 @@
         }
 
         public function set_mailProf($mailProf){
-            $this->$mailProf = $$mailProf;
+            $this->$mailProf = $mailProf;
         }
 
         public function set_pseudoProf($pseudoProf){

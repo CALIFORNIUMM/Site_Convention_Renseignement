@@ -57,5 +57,22 @@
                 throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());
             }
         } //PERMET L'INSERTION D'UN NOUVEL Contact
+
+        function findContactByEntreprise($idEnt){
+            $sql = "SELECT * FROM contact, entreprise  WHERE entreprise.idEnt= contact.idEnt AND entreprise.idEnt = :idEnt";
+            try {
+                $sth = $this->pdo->prepare($sql);
+                $sth->execute(array(":idEnt" => $idEnt));
+                $rows = $sth->fetchAll(PDO::FETCH_ASSOC);
+            } catch (PDOException $e) {
+                throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());
+            }
+            $contact = array();
+            foreach ($rows as $row) {
+                $contact[] = new Contact($row);
+            }
+            // Retourne un tableau d'objets
+            return $contact;
+        } // function find()
     }
 ?>
