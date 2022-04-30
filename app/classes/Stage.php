@@ -7,11 +7,11 @@
         private $dateFinStage;
         private $dureeHebdoStage;
         private $isPremiereAnnee;
-        private $idProfStage;
-        private $idEtudiantStage;
-        private $idAnneeScolaireStage;
-        private $idEntStage;
-        private $idContactStage;
+        private $idProf;
+        private $idEtudiant;
+        private $idAnneeScolaire;
+        private $idEnt;
+        private $idContact;
 
         function __construct(Array $Prof=NULL){
             if($Prof != NULL){
@@ -44,28 +44,28 @@
             return $this->dureeHebdoStage;
         }
 
-        public function get_isPremiereAnne(){
+        public function get_isPremiereAnnee(){
             return $this->isPremiereAnnee;
         }
 
-        public function get_idProfStage(){
-            return $this->idProfStage;
+        public function get_idProf(){
+            return $this->idProf;
         }
 
-        public function get_idEtudiantStage(){
-            return $this->idEtudiantStage;
+        public function get_idEtudiant(){
+            return $this->idEtudiant;
         }
 
-        public function get_idAnneeScolaireStage(){
-            return $this->idAnneeScolaireStage;
+        public function get_idAnneeScolaire(){
+            return $this->idAnneeScolaire;
         }
 
-        public function get_idEntStage(){
-            return $this->idEntStage;
+        public function get_idEnt(){
+            return $this->idEnt;
         }
         
-        public function get_idContactStage(){
-            return $this->idContactStage;
+        public function get_idContact(){
+            return $this->idContact;
         }
 
         //Functions SET
@@ -97,24 +97,24 @@
             $this->isPremiereAnnee = $isPremiereAnnee;           
     }
 
-        public function set_idProfStage($idProfStage){
-                $this->idProfStage = $idProfStage;               
+        public function set_idProf($idProf){
+                $this->idProf = $idProf;               
         }      
 
-        public function set_idEtudiantStage($idEtudiantStage){
-                $this->idEtudiantStage = $idEtudiantStage;               
+        public function set_idEtudiant($idEtudiant){
+                $this->idEtudiant = $idEtudiant;               
         }
 
-        public function set_idAnneeScolaireStage($idAnneeScolaireStage){
-                $this->idAnneeScolaireStage = $idAnneeScolaireStage;    
+        public function set_idAnneeScolaire($idAnneeScolaire){
+                $this->idAnneeScolaire = $idAnneeScolaire;    
         }
 
-        public function set_idEntStage($idEntStage){
-                $this->idEntStage = $idEntStage;        
+        public function set_idEnt($idEnt){
+                $this->idEnt = $idEnt;        
         }
        
-        public function set_idContactStage($idContactStage){
-                $this->idContactStage = $idContactStage;
+        public function set_idContact($idContact){
+                $this->idContact = $idContact;
         }
 
         //Function de fill sur les set_ter

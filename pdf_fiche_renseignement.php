@@ -2,6 +2,8 @@
 
 require_once "init.php";
 
+$id_stage = isset($_GET['id']) ? $_GET['id'] : null;
+
 // Instanciation de l'objet FDPF
 $pdf = new mpdf();
 

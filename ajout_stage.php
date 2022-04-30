@@ -83,11 +83,11 @@
                 'dateFinStage' => $dateFinStage,
                 'dureeHebdoStage' => $dureeHebdoStage,
                 'isPremiereAnnee' => $isPremiereAnnee,
-                'idProfStage' => $idProf,
-                'idEtudiantStage' => $idEtudiant,
-                'idAnneeScolaireStage' => $idAnneeScolaire, 
-                'idEntStage' => $idEnt,
-                'idContactStage' => $idContact          
+                'idProf' => $idProf,
+                'idEtudiant' => $idEtudiant,
+                'idAnneeScolaire' => $idAnneeScolaire, 
+                'idEnt' => $idEnt,
+                'idContact' => $idContact          
             );
             $stage = new Stage($values);
             $nstage = new StageDAO();
@@ -182,7 +182,7 @@
     </script>
 
     <label for="idEnt">Veuillez choisir votre entreprise.</label>   
-    <a href="ajout_enteprise.php">Ajoutez votre entreprise !</a><br>
+    <a href="ajout_entreprise.php">Ajoutez votre entreprise !</a><br>
     <select name="idEnt" id="idEnt" onChange="getcontact(this.value);">
         <option value=""selected>--Please choose an option--</option>
         <?php
