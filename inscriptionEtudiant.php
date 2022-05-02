@@ -174,4 +174,4 @@
     
     <input name="submit" type="submit" id="submit" value="S'inscrire">
 </form>
-<?php include('footer.php'); ?>
+<?php include('footer.php'); ?> // touchew

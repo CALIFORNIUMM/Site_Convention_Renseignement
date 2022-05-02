@@ -19,5 +19,5 @@ $entreprise=isset($_POST['idEnt']) ? $_POST['idEnt'] : NULL;
 ?>
 	<option value="<?php echo $contact->get_idContact(); ?>"><?php echo $contact->get_nomContact()." ".$contact->get_prenomContact(); ?></option>
 <?php
-	}
+	} // pas touchew
 ?>

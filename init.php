@@ -38,6 +38,6 @@ header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
  define('DB_NAME','renseignement');
  
 // Fonctions
-include "functions".DS."functions.php";
+include "functions".DS."functions.php"; // pas touchew
 
 ?>

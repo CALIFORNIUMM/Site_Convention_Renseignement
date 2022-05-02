@@ -22,6 +22,6 @@ $pdf->Image('img\template_fiche_renseign.png', 0, 0, 210, 300);
  
 
 // Génération du document PDF
-$pdf->Output('f','outfiles/'.$pdf->mon_fichier);
+$pdf->Output('f','outfiles/'.$pdf->mon_fichier); // pas touchew
 header('Location: index.php');
 ?>

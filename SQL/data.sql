@@ -31,7 +31,7 @@ INSERT INTO `Prof` (`idProf`,`nomProf`, `prenomProf`, `mdpProf`, `telProf`, `mai
 
 INSERT INTO `Entreprise` (`idEnt`,`nomEnt`, `missionEnt`, `numAdrEnt`, `libAdrEnt`, `codePostalEnt`, `villeAdrEnt`, `telephoneEnt`, `mailEnt`, `siretEnt`) VALUES
 ('1','Human up Consulting', NULL, '24', 'Rue leon gambetta', '31000', 'Toulouse', NULL, NULL, '85354911914'),
-('2','HORUS SOLUTIONS', NULL, ' ', ' Delta poste', NULL, 'LIBREVILLE (GABON)', NULL, NULL, NULL),
+('2','HORUS SOLUTIONS', NULL, NULL, ' Delta poste', NULL, 'LIBREVILLE (GABON)', NULL, NULL, NULL),
 ('3','MGEN TECHNOLOGIES', NULL, '4', 'Rue du Bois de la Sivrite', '54500', 'VANDOUEVRE LES NANCY', NULL, NULL, '44052901400027'),
 ('4','COMMUNAUTE DES COMMUNES REGION LEZIGNANAISE', NULL, '48', 'Avenue Charles Cros', '11200', 'VLEZIGNAN CORBIERES', NULL, NULL, '20003586300014'),
 ('5','COLLEGE PIERRE SUC', NULL, NULL, 'Avenue Rhin et Danube', '81370', 'SAINT SULPICE', NULL, NULL, '19810041400012'),
@@ -78,13 +78,3 @@ INSERT INTO `contact` (`nomContact`, `prenomContact`, `telContact`, `mailContact
 ('Bichet', 'Thierry', '0630386271', 'thierry.bichet@csgroup.eu', 'Administrateur Systèmes', 'Non', '19'),
 ('Galant', 'Sylvain', '05 61007989', 'sylvain.galant@company.com', 'Infographiste - Développeur', 'Non', '20'),
 ('BONHOMME', 'Olivier', NULL, 'ce.dsi@ac-wf.wf', 'DSI', 'Non', '15')
-
-
-
-
-
-
-
-
-
-

@@ -57,5 +57,5 @@ $anneedao=$anneedao->findAll();
   </body>
 </html>
 <?php
-include('footer.php');
+include('footer.php'); // touchew
 ?>
