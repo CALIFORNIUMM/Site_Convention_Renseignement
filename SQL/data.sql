@@ -31,7 +31,7 @@ INSERT INTO `Prof` (`idProf`,`nomProf`, `prenomProf`, `mdpProf`, `telProf`, `mai
 
 INSERT INTO `Entreprise` (`idEnt`,`nomEnt`, `missionEnt`, `numAdrEnt`, `libAdrEnt`, `codePostalEnt`, `villeAdrEnt`, `telephoneEnt`, `mailEnt`, `siretEnt`) VALUES
 ('1','Human up Consulting', NULL, '24', 'Rue leon gambetta', '31000', 'Toulouse', NULL, NULL, '85354911914'),
-('2','HORUS SOLUTIONS', NULL, ' ', ' Delta poste', NULL, 'LIBREVILLE (GABON)', NULL, NULL, NULL),
+('2','HORUS SOLUTIONS', NULL, NULL, ' Delta poste', NULL, 'LIBREVILLE (GABON)', NULL, NULL, NULL),
 ('3','MGEN TECHNOLOGIES', NULL, '4', 'Rue du Bois de la Sivrite', '54500', 'VANDOUEVRE LES NANCY', NULL, NULL, '44052901400027'),
 ('4','COMMUNAUTE DES COMMUNES REGION LEZIGNANAISE', NULL, '48', 'Avenue Charles Cros', '11200', 'VLEZIGNAN CORBIERES', NULL, NULL, '20003586300014'),
 ('5','COLLEGE PIERRE SUC', NULL, NULL, 'Avenue Rhin et Danube', '81370', 'SAINT SULPICE', NULL, NULL, '19810041400012'),
@@ -42,9 +42,9 @@ INSERT INTO `Entreprise` (`idEnt`,`nomEnt`, `missionEnt`, `numAdrEnt`, `libAdrEn
 ('10','ADISTA', NULL, '50', 'Rue Jean Bart Technoparc 6', '31670', 'Labège', NULL, NULL, NULL),
 ('11','SASU INVIS ART', NULL, '1', 'Avenue Gustve Eiffel', '11100', 'Narbonne', NULL, NULL, NULL),
 ('12','PIXBULL', NULL, '24', 'Avenue du Grand Tétras', '31860', 'Labarthe-sur-Leze', NULL, NULL, NULL),
-('13','DIRECTION DES SYSTEMES D INFORMATION', NULL, '34 Ter', 'Rue Pasteur', '31700', 'Blagnac', NULL, NULL, '50523519200042'),
+('13','DIRECTION DES SYSTEMES D INFORMATION', NULL, '34', 'Rue Pasteur', '31700', 'Blagnac', NULL, NULL, '50523519200042'),
 ('14','GROUPE ICAM', NULL, '53', 'Rue de la Boëtie', '75008', 'Paris', NULL, NULL, NULL),
-('15','VICE RECTORAT DE WALLIS ET FUTUNA', NULL, 'BP 244', 'Mata Utu', '98600', 'UVEA Wallis et Futuna', NULL, NULL, NULL),
+('15','VICE RECTORAT DE WALLIS ET FUTUNA', NULL, '244', 'Mata Utu', '98600', 'UVEA Wallis et Futuna', NULL, NULL, NULL),
 ('16','CRIC ASSOCIATION FORMATION', NULL, '19', 'place de la Croix de Pierre', '31076', 'Toulouse', NULL, NULL, NULL),
 ('17','ANRAS DITEP ST FRANCOIS', NULL, '36', 'Avenue Maurice Bourges Maunoury', '31200', 'Toulouse', NULL, NULL, NULL),
 ('18','CONSEIL DEPARTEMENTAL DU TARN ET GARONNE', NULL, '100', 'Boulevard Hubert Gouze', '82013', 'Montauban', NULL, NULL, NULL),
