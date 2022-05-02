@@ -76,5 +76,5 @@ INSERT INTO `contact` (`nomContact`, `prenomContact`, `telContact`, `mailContact
 ('Gohory', 'Xavier', '0562174166', 'xavier.gohory-esct@enac.fr', 'Chef de production', 'Non', '23'),
 ('Giral', 'Florian', '0652640916', 'florian.giral@invisiart.fr', 'Responsable SI', 'Non', '11'),
 ('Bichet', 'Thierry', '0630386271', 'thierry.bichet@csgroup.eu', 'Administrateur Systèmes', 'Non', '19'),
-('Galant', 'Sylvain', '05 61007989', 'sylvain.galant@company.com', 'Infographiste - Développeur', 'Non', '20'),
+('Galant', 'Sylvain', '0561007989', 'sylvain.galant@company.com', 'Infographiste - Développeur', 'Non', '20'),
 ('BONHOMME', 'Olivier', NULL, 'ce.dsi@ac-wf.wf', 'DSI', 'Non', '15')
