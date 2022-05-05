@@ -4,6 +4,15 @@ require_once "init.php";
 
 $id_stage = isset($_GET['id']) ? $_GET['id'] : null;
 
+$entreprisedao = New EntrepriseDAO();
+$entreprisedao=$entreprisedao->findAll();
+
+$profdao = New ProfDAO();
+$profdao=$profdao->findAll();
+
+$anneedao = New AnneeScolaireDAO();
+$anneedao = $anneedao->findAll();
+
 // Instanciation de l'objet FDPF
 $pdf = new mpdf();
 

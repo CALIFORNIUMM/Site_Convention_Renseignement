@@ -31,7 +31,7 @@ CREATE TABLE Entreprise(
    nomEnt VARCHAR(50),
    missionEnt VARCHAR(100),
    numAdrEnt INT,
-   libAdrEnt VARCHAR(50),
+   libAdrEnt VARCHAR(150),
    codePostalEnt VARCHAR(5),
    villeAdrEnt VARCHAR(25),
    telephoneEnt VARCHAR(10),
