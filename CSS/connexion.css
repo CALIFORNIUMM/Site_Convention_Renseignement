@@ -1,0 +1,74 @@
+
+.profil-box {
+    margin: 5% 30% 20% 30%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2), 0 16px 32px rgba(0, 0, 0, 0.2), 0 32px 64px rgba(0, 0, 0, 0.2);
+}
+
+.champs {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.champs h4 {
+    font-size: 10pt;
+}
+
+.champs a {
+    font-size: 10pt;
+    color: var(--greyhover-color);
+    margin-bottom: 5%;
+}
+
+.champs a:hover {
+    color: var(--opacityhome-color)
+}
+
+/* button {
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 1.2rem;
+    padding: 0.8rem 1.2rem;
+    border: 2px outset var(--button-color);
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: transparent;
+    transition: all 0.2s ease-out;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--white-color);
+    color: var(--greyhover-color);
+    transition-duration: 0.4s;
+} */
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+    -webkit-transition: box-shadow .5s ease;
+    -moz-transition: box-shadow .5s ease;
+    -o-transition: box-shadow .5s ease;
+    -ms-transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+}
+
+input:focus {
+    box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
+}

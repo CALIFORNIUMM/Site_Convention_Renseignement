@@ -55,15 +55,17 @@
         $messages->afficher();
     }
 ?>
-    <form method="POST">
-
-        <label for="pseudo">Pseudo</label><br>
-        <input type="text" name="pseudo" id="pseudo" value="<?= $pseudo ?>"><br>
-
-        <label for="mdp">Mot de Passe</label><br>
-        <input type="password" name="mdp" id="mdp"><br><br>
-
-        <input name="submit" type="submit" id="submit" value="Se connecter">
+    <form method="POST" class="profil-box">
+        <h1>bonsoir</h1>
+        <div class="champs">
+            <label for="pseudo">Pseudo</label><br>
+            <input type="text" name="pseudo" id="pseudo" value="<?= $pseudo ?>"><br>
+    
+            <label for="mdp">Mot de Passe</label><br>
+            <input type="password" name="mdp" id="mdp"><br><br>
+    
+            <input name="submit" type="submit" id="submit" value="Se connecter">
+        </div>
     </form>
     <a href="mdpoublie.php">Mot de passe oublié ?</a>
 <?php include('footer.php'); ?>

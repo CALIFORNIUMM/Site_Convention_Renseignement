@@ -1,5 +1,6 @@
 <?php
     include('init.php');
+    include('CSS/connexion.css');
     $messages = array();  // Message d'erreur
     if(isset($_SESSION['Etudiant'])){
         $sessionEtu = $_SESSION['Etudiant'];
