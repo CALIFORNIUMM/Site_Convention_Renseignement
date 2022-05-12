@@ -57,7 +57,7 @@
             $ncontact = new ContactDAO();
             $ncontact = $ncontact->newContact($contact);
             $flash->set_type('succes')->add_messages('Vous avez bien ajouté le contact : '.$contact->get_nomContact().'')->put();
-            header("Location: index.php");
+            header("Location: ajout_stage.php");
         }
     }
 ?>

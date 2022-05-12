@@ -56,7 +56,7 @@
     }
 ?>
     <form method="POST">
-
+        
         <label for="pseudo">Pseudo</label><br>
         <input type="text" name="pseudo" id="pseudo" value="<?= $pseudo ?>"><br>
 

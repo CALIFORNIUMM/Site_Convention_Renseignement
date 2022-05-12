@@ -54,6 +54,7 @@ $anneedao = $anneedao->findAll();
                   echo "<td>".$annee->get_libAnneeScolaire()."</td>";
               }
             }
+            
             echo '<td><a href="pdf_fiche_renseignement.php?id='.$stage->get_idStage().'">PDF</a></td>';
 
             echo "</tr>";
